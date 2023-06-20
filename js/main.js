@@ -82,23 +82,48 @@
 // let media : number = suma / arrayNumeros.length
 // console.log(media)
 //28. Teniendo en cuenta que la clave es “eureka”, escribir un algoritmo que nos pida una clave. Solo tenemos 3 intentos para acertar, si fallamos los 3 intentos nos mostrará un mensaje indicándonos que hemos agotado esos 3 intentos (Recomiendo utilizar un interruptor). Si acertamos la clave, saldremos directamente del programa.
-let claveVerdadera = "eureka";
-let clave = prompt("Introduce la contraseña.");
-let intentos = 3;
-const comprobarClave = (contraseña) => {
-    if (contraseña === claveVerdadera) {
-        console.log("Saliendo...");
-    }
-    else if (intentos > 1) {
-        intentos -= 1;
-        contraseña = prompt(`Introduce otra contraseña, te quedan ${intentos} intentos.`);
-        comprobarClave(contraseña);
-    }
-    else {
-        console.log("Agotaste los 3 intentos...LLamando a la poli...");
-    }
-};
-comprobarClave(clave);
+// let claveVerdadera : string = "eureka";
+// let clave : any = prompt("Introduce la contraseña.");
+// let intentos : number = 3
+// const comprobarClave = (contraseña : any) => {
+//     if(contraseña === claveVerdadera){
+//         console.log("Saliendo...")
+//     } else if(intentos > 1){
+//         intentos -= 1
+//         contraseña = prompt(`Introduce otra contraseña, te quedan ${intentos} intentos.`)
+//         comprobarClave(contraseña)
+//     }else{
+//         console.log("Agotaste los 3 intentos...LLamando a la poli...")
+//     }  
+// }
+// comprobarClave(clave)
 //29. Algoritmo que lea números enteros hasta teclear 0, y nos muestre el máximo, el mínimo y la media de todos ellos. Piensa cómo debemos inicializar las variables.
+// let arrayNumeros : number[] = []
+// let suma : number = 0
+// let numero : any = prompt("")
+// parseInt(numero)
+// while (numero !== 0){
+//     arrayNumeros.push(numero)
+//     numero = prompt("Introduce un número")
+//     console.log(arrayNumeros)
+// }
+// let numeroMayor = arrayNumeros[0]
+// let numeroMenor = arrayNumeros[0]
+// for(let i = 0; i < arrayNumeros.length; i++){
+//     console.log(arrayNumeros[i])
+//     if(arrayNumeros[i] > numeroMayor){
+//         numeroMayor = arrayNumeros[i]
+//     }
+//     if(arrayNumeros[i] < numeroMenor){
+//         numeroMenor = arrayNumeros[i]
+//     }
+//     suma += arrayNumeros[i];
+// }
+// let media : number = suma/arrayNumeros.length
+// console.log(`El número más grande es el: ${numeroMayor}, el más pequeño es: ${numeroMenor} y la media de todos los números es: ${media.toFixed(2)}`)
 //30. Algoritmo que visualice la cuenta de los números que son múltiplos de 2 o de 3 que hay entre 1 y 100.
-//31. Calcular las calificaciones de un grupo de alumnos. La nota final de cada alumno se calcula según el siguiente criterio: la parte práctica vale el 10%; la parte de problemas vale el 50% y la parte teórica el 40%. El algoritmo leerá el nombre del alumno, las tres notas, escribirá el resultado y volverá a pedir los datos del siguiente alumno hasta que el nombre sea una cadena vacía. Las notas deben estar entre 0 y 10, si no lo están, no imprimirá las notas, mostrará un mensaje de error y volverá a pedir otro alumno.
+// for(let i = 0; i <= 100; i++){
+//     if(i % 2 == 0 || i % 3 == 0){
+//         console.log(`- ${i}`)
+//     }
+// }
